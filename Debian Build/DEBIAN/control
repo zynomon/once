@@ -1,0 +1,8 @@
+Package: Once
+Version: 0.1
+Architecture: all
+Maintainer:  Zynomon aelius
+Installed-Size: 225
+Depends: libqt6core6, libqt6gui6, libqt6widgets6, libqt6network6, systemd
+Priority: optional
+Description: A package that has only one purpose then fades away
