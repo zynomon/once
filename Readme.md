@@ -5,5 +5,5 @@ to run on new devices
 
 
 
-to build it as a debian package  download debian build customize and use dpkg --build {location of debian build folder}
+to build it as a debian package  download dpkgbuild.7z, extract, customize and use dpkg --build {location of debian build folder}
 for Qt app editing git clone this directory 
