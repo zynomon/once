@@ -178,7 +178,7 @@ public:
     OnboardingTour(QWidget* parent = nullptr) : QWidget(parent) {
         setWindowFlags(Qt::FramelessWindowHint);
         setAttribute(Qt::WA_TranslucentBackground);
-        setWindowIcon(QIcon::fromTheme("system-software-install"));
+        setWindowIcon(QIcon::fromTheme("start-here"));
         QScreen* screen = QGuiApplication::primaryScreen();
         setGeometry(screen->geometry());
 
@@ -223,7 +223,7 @@ private:
                                {"nnn && sudo apt remove --allow-remove-essentials konsole mpv featherpad plasma-discover plasma-discover-backend-fwupd kde-spectacle kdeconnect plasma-firewall pipewire-pulse plasma-workspace qt6-style-kvantum dolphin && sudo apt autoremove && sudo apt install --no-install-recommends zutty"}};
 
         profiles["essential"] = {"Essential", "applications-internet", "Browser, media player and image viewer - Daily use basics",
-                                 {"falkon", "mpv", "qimgv", "qmmp"}};
+                                 {"firefox", "mpv", "qimgv", "ark"}};
 
         profiles["gaming"] = {"Gaming", "applications-games", "Native Linux games - Not recommended for low-end devices",
                               {"lutris", "xonotic", "teeworlds", "supertux", "supertuxkart"}};
@@ -306,7 +306,7 @@ private:
         icon0->setAlignment(Qt::AlignCenter);
         QLabel* t0 = new QLabel("Welcome to error.os");
         t0->setStyleSheet("font-size: 42px; font-weight: bold; color: #e0e0ff;");
-        QLabel* e0 = new QLabel("Neospace  2025");
+        QLabel* e0 = new QLabel("Neospace  2026");
         e0->setStyleSheet("font-size: 38px; font-weight: bold; color: #e0e0ff;");
         e0->setAlignment(Qt::AlignCenter);
         QLabel* d0 = new QLabel("Let's set up your system in a few simple steps");
@@ -354,23 +354,35 @@ private:
         d2->setStyleSheet("font-size: 16px; color: #b0b0d0;");
         d2->setAlignment(Qt::AlignCenter);
 
-        QString licenseText = R"(WELCOME TO error.os
-Consider this as a fun journey
-This isn't just another boring linux operating system,
+        QString licenseText = R"(Welcome to error.os
 
-• TRUE OWNERSHIP: This computer belongs to you now. Customize everything!
-• EMBRACE THE GLITCHES: Things will break sometimes. That's where the real learning happens.
-• FOUND A BUG? report in the github page https://github.com/zynomon/error or
-   try fixing yourself that is what embracing error truly means
-• MAKE IT BEAUTIFUL: Theme it, tweak it, make it unrecognizable. Go crazy!
-• EXPERIMENT FEARLESSLY: Break things! Discover what's possible through trial and error.
-• SHARE YOUR CREATIONS: Show off your setups. Inspire others!
-• BACKUP YOUR WORK: Protect your important files. Always.
-• MOST IMPORTANTLY: Enjoy the journey! Have fun exploring.
-• TOTAL PRIVACY: We don't track you. No telemetry, no data collection, not even oour personal website with a paid domain.
+This is not a community. This is not a movement. This is not a product.
+This is an operating system that 'someone' made because they wanted to.
+Now it's yours.
 
-                  Ready to create something amazing? Let's begin!
-                 for help and other stuffs join our discord  server
+Here's how this works:
+
+You own this computer now. Not us. Not some corporation. Not a foundation with a code of conduct and a marketing budget. You.
+
+That means you can change anything. Break anything. Fix anything. Theme it until your eyes bleed. Remove every package and start from zero. Install everything until it crashes. Nobody is going to stop you.
+
+Things will break. That's not a bug report, that's a learning opportunity. When something crashes, you get to figure out why. When something doesn't work the way you expect, you get to make it work the way you want. Every error message is a door. Walk through it.
+
+Found a bug? https://github.com/zynomon/error
+Or don't report it. Fix it yourself. That's what embracing error actually means.
+
+If you do report it, cool. If you send a pull request, even better. If you fork the whole thing and make your own version, that's the best outcome.
+
+Make it beautiful. Make it ugly. Make it unrecognizable. Make it yours. Show it off if you want. Keep it secret if you want. This is your machine now.
+
+Experiment fearlessly. You cannot break this permanently. You can always reinstall. The worst thing that happens is you learn something. The best thing that happens is you discover something nobody else has tried.
+
+Back up your work. This one is serious. Not because we're responsible for your data, but because losing things you care about sucks. Don't let that happen to you.
+
+
+Ready? Good.
+Let Us Begin
+
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 

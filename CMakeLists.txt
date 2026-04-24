@@ -7,22 +7,18 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-# Find Qt6
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets Gui Network)
 
-# Create executable
+
 add_executable(once
     main.cpp
     qrc.qrc
 )
 
-# Link Qt libraries
 target_link_libraries(once PRIVATE
     Qt6::Core
     Qt6::Widgets
     Qt6::Gui
-    Qt6::Network
 )
 
-# Install target
 install(TARGETS once DESTINATION bin)
