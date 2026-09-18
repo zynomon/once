@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>help.png</file>
+        <file>LICENSE</file>
     </qresource>
 </RCC>
