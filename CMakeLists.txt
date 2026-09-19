@@ -13,7 +13,6 @@ find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 add_executable(once
     main.cpp
     qrc.qrc
-
 )
 
 target_link_libraries(once PRIVATE
